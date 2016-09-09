@@ -6,4 +6,4 @@ sudo chmod 777 -R /var/www
 sudo service apache2 restart
 echo "<?php phpinfo(); ?>" > /var/www/html/info.php
 echo “Fim da Instalação. 
-Firefox localhost/info.php
+firefox localhost/info.php

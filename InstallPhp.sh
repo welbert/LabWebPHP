@@ -34,9 +34,7 @@ if [ "$So" != "Debian" ]; then
 		php5
 	fi
 else
-	if [ "$So" != "Ubuntu" ]; then
-		php5
-	fi
+	php5
 fi
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"

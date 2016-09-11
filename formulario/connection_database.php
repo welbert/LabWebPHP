@@ -2,6 +2,7 @@
 /**
  *
  * @author Welbert Serra
+ * include 'connection_database.php';
  *Example : $result = DataBase::getInstance()->executeQuery("DELETE FROM Table WHERE field");
  */
 class DataBase
@@ -41,7 +42,7 @@ class DataBase
    public function executeQuery($sql) //query para saber se executou ou não com sucesso
    {
       if (self::$conn->query($sql) === TRUE) {
-         return true;
+         return array(true);
       } else {
          return array(false,self::$conn->error);
       }
@@ -51,7 +52,7 @@ class DataBase
    {
       if (self::$conn->query($sql) === TRUE) {
          $last_id = self::$conn->insert_id;
-         return $last_id;
+         return array($last_id);
       } else {
          return array(0,self::$conn->error);
       }

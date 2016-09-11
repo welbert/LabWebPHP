@@ -20,8 +20,14 @@
 					"INSERT INTO formulario (nome,email,assunto,mensagem)".
 					"VALUES ('".$nome."','".$email."','".$assunto."','".$mensagem."')"
 				);
-				print_r($result);
-				echo "Sua mensagem foi enviada com sucesso, Sr(a). ".$nome."!";
+				if($result[0]>0)
+					echo "<p style='color: green;'>
+						Sua mensagem foi enviada com sucesso, Sr(a). ".$nome."!
+					</p>";
+				else
+					echo "<p style='color: red;'>
+					Falha no envio. Mensagem retornada do banco: $result[1]
+					</p>";
 
 			}
 		?>

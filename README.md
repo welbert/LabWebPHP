@@ -4,5 +4,4 @@
   * Bruno Novaes
   * Diego Novaes
   * Iran Cezar
-  * Kênia Arruda
   * Welbert Serra

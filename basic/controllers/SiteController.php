@@ -122,4 +122,30 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+   
+    /*
+    * Displays a Hello World Page
+    *
+    */
+    public function actionHello($message = "Hello World")
+    {
+      return $this->render('hello', ['message' => $message]);
+    }
+
+    public function actionEntry()
+    {
+      $model = new EntryForm();
+
+      //Yii::$app represents the application instance
+      if( $model->load(Yii::$app->request->post()) && $model->validade() )
+      {
+        //do something about the $model ... and render other page entry-confirm
+        return $this->render('entry-confirm', ['model' => $model]);
+
+      }else{
+        //back to entry page with some displayed error
+        return $this->render('entry', ['model' => $model]);
+      }
+
+    }
 }

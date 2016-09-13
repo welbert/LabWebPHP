@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\EntryForm;
 
 class SiteController extends Controller
 {
@@ -137,7 +138,7 @@ class SiteController extends Controller
       $model = new EntryForm();
 
       //Yii::$app represents the application instance
-      if( $model->load(Yii::$app->request->post()) && $model->validade() )
+      if( $model->load(Yii::$app->request->post()) && $model->validate() )
       {
         //do something about the $model ... and render other page entry-confirm
         return $this->render('entry-confirm', ['model' => $model]);

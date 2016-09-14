@@ -8,7 +8,7 @@ echo "Sistema=" $So
 php7 () {
 	sudo apt-get update
 	sudo apt-get install -y apache2 php7.0 libapache2-mod-php7.0 mysql-server
-	sudo apt-get install -y php7.0-mysql php7.0-mbstring
+	sudo apt-get install -y php7.0-mysql php7.0-mbstring php-imagick
 	sudo chmod 777 -R /var/www
 	sudo service apache2 restart
 	echo "<?php phpinfo(); ?>" > /var/www/html/info.php
@@ -20,7 +20,7 @@ php5 () {
 	sudo apt-get update
 	sudo apt-get install apache2 php5 libapache2-mod-php5 mysql-server
 	sudo chmod 777 -R /var/www
-	sudo apt-get install libapache2-mod-auth-mysql php5-mysql phpmyadmin
+	sudo apt-get install libapache2-mod-auth-mysql php5-mysql phpmyadmin php5-imagick
 	sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 	sudo service apache2 restart
 	echo "<?php phpinfo(); ?>" > /var/www/html/info.php

@@ -38,6 +38,7 @@ class Bike extends \yii\db\ActiveRecord
             [['fabricante', 'proprietario', 'email'], 'string', 'max' => 50],
             [['modelo', 'cor', 'marchadocambio'], 'string', 'max' => 25],
             [['celular'], 'string', 'max' => 20],
+            [['celular'], 'udokmeci\yii2PhoneValidator\PhoneValidator', 'country' => 'BR'],
         ];
     }
 

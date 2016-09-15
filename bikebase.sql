@@ -1,4 +1,5 @@
 CREATE DATABASE bikebase;
+USE bikebase;
 CREATE TABLE `bike` (
 	`id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`fabricante` VARCHAR(50) NOT NULL,
@@ -8,5 +9,5 @@ CREATE TABLE `bike` (
 	`marcadocambio` VARCHAR(25),
 	`proprietario` VARCHAR(50) NOT NULL,
 	`celular` VARCHAR(20) NOT NULL,
-	`email' VARCHAR(50)
+	`email` VARCHAR(50)
 ) CHARSET=utf8;

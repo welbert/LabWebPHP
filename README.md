@@ -9,7 +9,7 @@
 
 ## Configuração do Yii pós-instalação (Primeira Aplicação)
 
-*Configurar informações de conexão com o  database no arquivo de configuracao do yii
+* Configurar informações de conexão com o  database no arquivo de configuracao do yii
 
 basic/config/db.php
 
@@ -28,7 +28,9 @@ e digite o password (root). Ao entrar no mysql, digite:
 
 SOURCE bikebase.sql
 
-# Agora já é possível utilizar o módulo gii do Yii para geração de CRUD, models e controllers. Porém antes disso um ultimo passo, gerar permissões de leitura e escrita para o projeto.
+* Acessando o módulo gii
+ 
+Agora já é possível utilizar o módulo gii do Yii para geração de CRUD, models e controllers. Porém antes disso um ultimo passo, gerar permissões de leitura e escrita para o projeto.
 
 sudo chmod 777 -R ./basic
 

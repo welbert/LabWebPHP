@@ -40,5 +40,5 @@ sudo chmod 777 -R basic
 
 Basta acessar o navegador agora e acessar o modulo gii pelo link:
 
-http://localhost/basic/?r=gii
+[http://localhost/basic/?r=gii](http://localhost/basic/?r=gii)
 

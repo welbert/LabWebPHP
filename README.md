@@ -7,6 +7,10 @@
   * Welbert Serra
 
 
+##Link para Máquina Virtual
+https://goo.gl/9KCCn8
+
+
 ## Configuração do Yii pós-instalação (Primeira Aplicação)
 
 * Configurar informações de conexão com o  database no arquivo de configuracao do yii

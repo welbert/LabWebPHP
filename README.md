@@ -34,9 +34,9 @@ SOURCE bikebase.sql
 
 * Acessando o módulo gii
  
-Agora já é possível utilizar o módulo gii do Yii para geração de CRUD, models e controllers. Porém antes disso um ultimo passo, gerar permissões de leitura e escrita para o projeto.
+Agora já é possível utilizar o módulo gii do Yii para geração de CRUD, models e controllers. Porém antes disso um ultimo passo, gerar permissões de leitura e escrita para o projeto. Execute o código abaixo na pasta www do apache
 
-sudo chmod 777 -R ./basic
+sudo chmod 777 -R basic
 
 Basta acessar o navegador agora e acessar o modulo gii pelo link:
 
